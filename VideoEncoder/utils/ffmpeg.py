@@ -33,9 +33,7 @@ from .. import tune as t
 
 
 def get_codec(filepath, channel='v:0'):
-    output = subprocess.check_output(['ffprobe', '-v', 'error', '-select_streams', channel,
-                                      '-show_entries', 'stream=codec_name,codec_tag_string', '-of',
-                                      'default=nokey=1:noprint_wrappers=1', filepath])
+    output = subprocess.check_output(["ffprobe -v error -select_streams v:0 -show_entries stream=codec_name codec_tag_string -of default=noprint_wrappers=1:nokey=1 {$input['filename']}" filepath])
     return output.decode('utf-8').split()
 
 
