@@ -1,5 +1,5 @@
 pyrogram==1.3.5
-TgCrypto
+TgCrypto==1.1.1
 python-dotenv
 hachoir
 aiofiles
