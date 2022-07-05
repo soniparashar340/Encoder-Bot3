@@ -41,7 +41,7 @@ def get_codec(filepath, channel='v:0'):
 async def encode(filepath):
     path, extension = os.path.splitext(filepath)
     name = path.split('/')
-    output_filepath = encode_dir + name[len(name)-1] + '.mp4'
+    output_filepath = encode_dir + name[len(name)-1] + '.HEVC' + '.mp4'
     assert(output_filepath != filepath)
 
     if os.path.isfile(output_filepath):
