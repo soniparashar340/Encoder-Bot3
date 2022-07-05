@@ -4,15 +4,15 @@
     "env": {
         "API_ID": {
             "description": "",
-            "required": "True"
+            "required": "False"
         },
         "API_HASH": {
             "description": "",
-            "required": "True"
+            "required": "False"
         },
         "BOT_TOKEN": {
             "description": "",
-            "required": "True"
+            "required": "False"
         },
         "SUDO_USERS": {
             "description": "",
@@ -26,7 +26,7 @@
         },
         "PRESET": {
             "description": "sf",
-            "required": "True"
+            "required": "False"
         },
         "TUNE": {
             "description": "film",
@@ -42,23 +42,23 @@
         },
         "DOWNLOAD_DIR": {
             "description": "VideoEncoder/utils/downloads/",
-            "required": "True"
+            "required": "False"
         },
         "ENCODE_DIR": {
             "description": "VideoEncoder/utils/encodes/",
-            "required": "True"
+            "required": "False"
         },
         "RESOLUTION": {
             "description": "",
-            "required": "True"
+            "required": "false"
         },
         "PRESET": {
             "description": "",
-            "required": "True"
+            "required": "False"
         },
         "CRF": {
             "description": "",
-            "required": "True"
+            "required": "False"
         }
   },
    "addons": [{
